@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+Export-Package: VAADIN.widgetsets.com.thingtrack.mobile.test.gwt.AppWi
+ dgetSet;version="0.0.1.SNAPSHOT",VAADIN.widgetsets.com.thingtrack.mob
+ ile.test.gwt.AppWidgetSet.ie6pngfix;version="0.0.1.SNAPSHOT",com.thin
+ gtrack.mobile.test;version="0.0.1.SNAPSHOT";uses:="com.vaadin,com.vaa
+ din.addon.touchkit.ui,com.vaadin.ui"
+Bundle-Classpath: WEB-INF/classes
+Built-By: Carlos
+Bundle-Name: Vaadin OSGi Spring Application
+Created-By: Apache Maven
+Web-ContextPath: mobile.test
+Build-Jdk: 1.6.0_29
+Bundle-Version: 0.0.1.SNAPSHOT
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: com.thingtrack.mobile.test
+Import-Package: com.vaadin,com.vaadin.addon.touchkit.ui,com.vaadin.eve
+ nt,com.vaadin.terminal,com.vaadin.terminal.gwt.server,com.vaadin.ui
+Archiver-Version: Plexus Archiver
+
