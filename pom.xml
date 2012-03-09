@@ -56,6 +56,19 @@
 			<version>${gwt.version}</version>
 			<scope>provided</scope>
 		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-beans</artifactId>
+			<version>3.0.5.RELEASE</version>
+			<type>jar</type>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.osgi</groupId>
+			<artifactId>spring-osgi-core</artifactId>
+			<version>1.2.1</version>
+			<scope>provided</scope>
+		</dependency>
 	</dependencies>
 
 	<build>
@@ -142,11 +155,17 @@ Bundle-SymbolicName: ${project.groupId}.${project.artifactId}
 Web-ContextPath: mobile.test
 Bundle-Classpath: WEB-INF/classes
 Bundle-Version: ${project.version}
-Import-Package: com.vaadin, 
+Import-Package: org.eclipse.virgo.web.dm,  
+ com.vaadin, 
  com.vaadin.ui, 
  com.vaadin.event,
  com.vaadin.terminal,
- com.vaadin.terminal.gwt.server
+ com.vaadin.terminal.gwt.server,
+ org.aspectj.lang,
+ org.aspectj.lang.annotation,
+ org.aspectj.runtime.reflect,
+ VAADIN.themes.konekti;version="[0.0,1)",
+ VAADIN.widgetsets.com.thingtrack.konekti.view.component.gwt.KonektiWidgetSet;version="[0.0,1)"
 ]]></manifestHeaders>
 				</configuration>
 				<!-- generate the manifest automatically during packaging -->

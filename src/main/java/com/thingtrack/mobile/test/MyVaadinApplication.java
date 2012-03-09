@@ -1,14 +1,18 @@
 package com.thingtrack.mobile.test;
 
+import org.springframework.beans.factory.annotation.Configurable;
+import org.springframework.context.annotation.Scope;
+
 import com.vaadin.addon.touchkit.ui.TouchKitApplication;
 import com.vaadin.ui.Button;
 import com.vaadin.ui.Button.ClickEvent;
 import com.vaadin.ui.Label;
-import com.vaadin.ui.Window;
 
 /**
  * The Application's "main" class
  */
+@Configurable
+@Scope("session")
 @SuppressWarnings("serial")
 public class MyVaadinApplication extends TouchKitApplication
 {
